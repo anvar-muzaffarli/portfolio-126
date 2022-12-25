@@ -2,6 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+
+/*
+ ----1----- Header 
+ ----2----- Section 
+ ----2----- Footer 
+
+
+
+*/
+
+/* * {
+    outline: 1px solid red;
+} */
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -40,3 +54,113 @@ header nav a {
         padding: 20px;
     }
 }
+
+
+/* INTRODUCTION SECTION KODLARI START */
+
+.introduction {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    padding-left:112.5px;
+    padding-right:112.5px;
+    flex-wrap: wrap;
+}
+
+
+.introduction .left-side {
+    padding-top: 117px;
+    min-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.introduction h1 {
+    font-size: 72px;
+    font-weight: 700;
+
+    /* letter-spacing: 2px; */
+}
+
+.introduction .left-side h1 span {
+   color: #FF8A56;
+}
+/* A B C D E F */
+.introduction .left-side p {
+    color:#666;
+    margin-top:34px;
+    margin-bottom:34px;
+}
+
+.introduction .left-side button {
+    background-color: #333;
+    width: 151px;
+    height: 58px;
+    color:#fff;
+   
+}
+
+.introduction .left-side a {
+    padding-left: 12px;
+}
+
+
+.button-groups {
+    display: flex;
+    align-items: center;
+}
+
+.button-groups a {
+    color:#000;
+}
+
+
+@media(max-width:1427px) and (min-width:836px) {
+    .introduction .left-side {
+        background-color: red;
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .introduction .right-side {
+        margin: 0 auto;
+    }
+}
+
+
+@media(max-width:768px) {
+
+    .introduction {
+        padding-left: 30px;
+    }
+
+    .introduction .left-side {
+        min-width: 500px;
+    }
+
+    .introduction .left-side h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .introduction .left-side p {
+        text-align: center;
+    }
+
+
+    .button-groups {
+        margin: 20px auto;
+    }
+
+   .introduction  .right-side {
+        margin:  0 auto;
+    }
+
+    
+}
+
+/* INTRODUCTION SECTION KODLARI END */
+
+
