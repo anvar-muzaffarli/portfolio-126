@@ -164,3 +164,37 @@ header nav a {
 /* INTRODUCTION SECTION KODLARI END */
 
 
+/* TRUSTED BY SECTION START */
+.trusted-by-section {
+    padding-top: 77px;
+}
+
+
+.trusted-by-section h5 {
+    text-align: center;
+    font-size: 1.2rem
+}
+
+.partner-section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 34px;
+}
+
+
+@media(max-width:768px) {
+    /* odd tek even cut */
+    .partner-company:nth-child(odd){
+        display: none;
+    }
+}
+
+@media(max-width:576px) {
+    /*  css js ile bagliliq */
+    .partner-company:not(:first-child) {
+        display: none;
+    }
+}
+
+
+/* TRUSTED BY SECTION END */
